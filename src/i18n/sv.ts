@@ -198,7 +198,7 @@ export const sv: Strings = {
       {
         heading: 'Varför bara byråer och banker',
         paragraphs: [
-          'En enda handling för en privatperson och en closing med fyrtio firmatecknare i fyra länder är olika arbeten. Vi byggde byrån för det andra: långa öppettider, fyra språk, två notarier som kan vara i samma möte, och ett budkonto som används varje dag.',
+          'En enda handling och en closing med fyrtio firmatecknare i fyra länder är olika arbeten. Vi byggde byrån för det andra: långa öppettider, fyra språk, två notarier som kan vara i samma möte, och ett budkonto som används varje dag.',
         ],
       },
       {

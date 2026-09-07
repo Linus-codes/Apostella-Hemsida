@@ -196,7 +196,7 @@ export const en = {
       {
         heading: 'Why only firms and banks',
         paragraphs: [
-          'A single document for a private individual and a closing with forty signatories in four countries are different jobs. We built the firm for the second one: long opening hours, four languages, two notaries who can be in the same meeting, and a courier account that is used every day.',
+          'A single document and a closing with forty signatories in four countries are different jobs. We built the firm for the second one: long opening hours, four languages, two notaries who can be in the same meeting, and a courier account that is used every day.',
         ],
       },
       {
