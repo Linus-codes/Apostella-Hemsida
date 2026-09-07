@@ -4,7 +4,7 @@ import PageHead from '../PageHead.astro';
 import Tbc from '../Tbc.astro';
 import { strings } from '../../i18n';
 import type { Lang } from '../../i18n/routes';
-import { contact, company } from '../../data/site';
+import { contact, company, DRAFT } from '../../data/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = strings[lang];
@@ -23,10 +23,12 @@ const c = t.contact;
           <p class="meta">{c.phone}</p>
           <p class="big">{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
         </div>
-        <div>
-          <p class="meta">{c.booking}</p>
-          <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{c.bookingLink}</a> : <Tbc lang={lang} />}</p>
-        </div>
+        {(contact.bookingUrl || DRAFT) && (
+          <div>
+            <p class="meta">{c.booking}</p>
+            <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{c.bookingLink}</a> : <Tbc lang={lang} />}</p>
+          </div>
+        )}
         <div>
           <p class="meta">{c.hours}</p>
           <p class="big">{c.hoursValue}</p>

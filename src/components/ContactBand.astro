@@ -1,7 +1,7 @@
 ---
 import { strings } from '../i18n';
 import type { Lang } from '../i18n/routes';
-import { contact } from '../data/site';
+import { contact, DRAFT } from '../data/site';
 import Tbc from './Tbc.astro';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -20,10 +20,12 @@ const t = strings[lang];
         <p class="big">{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
         <p class="meta hours">{t.contactBand.hours}</p>
       </div>
-      <div>
-        <p class="meta">{t.contactBand.booking}</p>
-        <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{t.contactBand.bookingLink}</a> : <Tbc lang={lang} />}</p>
-      </div>
+      {(contact.bookingUrl || DRAFT) && (
+        <div>
+          <p class="meta">{t.contactBand.booking}</p>
+          <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{t.contactBand.bookingLink}</a> : <Tbc lang={lang} />}</p>
+        </div>
+      )}
     </div>
   </div>
 </section>

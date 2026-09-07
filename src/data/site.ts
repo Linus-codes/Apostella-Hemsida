@@ -1,6 +1,6 @@
 // Alla sajtfakta på ett ställe. Ändra här, aldrig i mallarna.
 // DRAFT: så länge den är true visas en utkastrad överst på varje sida. Sätt till false när ägaren bekräftat alla uppgifter.
-export const DRAFT = true;
+export const DRAFT = false;
 
 export const SITE_URL = 'https://apostella.com';
 export const NOTARIEGUIDEN_URL = 'https://notarieguiden.se/';
@@ -8,17 +8,18 @@ export const NOTARIEGUIDEN_URL = 'https://notarieguiden.se/';
 export const company = {
   name: 'Apostella',
   // Firma, organisationsnummer och säte fylls i av ägaren. Tomt fält visas som "bekräftas" i utkastläge.
-  legalName: '',
+  legalName: 'Apostella',
+  // Organisationsnummer läggs till när ägaren lämnar det. Tomt fält visas inte.
   orgNumber: '',
   seat: 'Stockholm',
-  // Adress för hämta och lämna.
-  address: '',
+  // Kontor, hämtning och leverans.
+  address: 'Sveavägen 34, 111 34 Stockholm',
 };
 
 export const contact = {
   // Tomt fält visas som "bekräftas". Inga påhittade uppgifter.
-  email: '',
-  phone: '',
+  email: 'apostella@lawstory.se',
+  phone: '+46 73 721 94 38',
   // Länk till bokningssidan, till exempel Microsoft Bookings. Saknas den pekar knappen Boka möte på kontaktsidan.
   bookingUrl: '',
 };

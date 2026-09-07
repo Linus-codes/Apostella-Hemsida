@@ -3,7 +3,7 @@ import type { Strings } from './en';
 export const sv: Strings = {
   siteName: 'Apostella',
   siteDescription:
-    'Notarius publicus för advokatbyråer och banker. Bestyrkande på video, apostille i samma möte och original i wet ink med bud. Vardagar 08.00 till 22.00.',
+    'Notarius publicus med bas i Sverige, för advokatbyråer och banker. Bestyrkande och apostille i ett digitalt möte, original i wet ink med bud. Vardagar 08.00 till 22.00 CET.',
   nav: {
     services: 'Tjänster',
     how: 'Så går det till',
@@ -23,11 +23,10 @@ export const sv: Strings = {
   tbc: 'bekräftas',
   footer: {
     tagline: 'Notarius publicus för advokatbyråer och banker.',
-    noPrivate: 'Vi tar inte emot privatpersoner.',
     knowledge: 'Notarieguiden, vår kunskapssajt',
     company: 'Bolaget',
     hours: 'Öppet',
-    hoursValue: 'Vardagar 08.00 till 22.00',
+    hoursValue: 'Vardagar 08.00 till 22.00 CET',
     contact: 'Kontakt',
     privacy: 'Integritetspolicy',
     orgNumber: 'Organisationsnummer',
@@ -41,33 +40,28 @@ export const sv: Strings = {
     phone: 'Telefon',
     booking: 'Bokning',
     bookingLink: 'Boka ett videomöte',
-    hours: 'Vardagar 08.00 till 22.00',
+    hours: 'Vardagar 08.00 till 22.00 CET',
   },
   home: {
     title: 'Apostella. Notarius publicus för advokatbyråer och banker',
     h1: 'Bestyrkt och apostillerad i ett möte, var klienten än sitter.',
-    lede: 'Apostella är en notarius publicus-byrå i Sverige som bara arbetar med advokatbyråer och banker. Vi bevittnar underskriften på video, sätter apostillen i samma möte och skickar originalet med expressbud.',
+    lede: 'Apostella är en notarius publicus-byrå med bas i Sverige som bara arbetar med advokatbyråer och banker. Vi bevittnar underskriften i ett digitalt möte där klienten har verifierat sin identitet, utfärdar både bestyrkandet och apostillen i samma möte, och skickar originalet med expressbud.',
     primary: 'Boka möte',
     secondary: 'Så går det till',
     facts: [
-      { label: 'Öppet', value: 'Vardagar 08.00 till 22.00 svensk tid' },
+      { label: 'Öppet', value: 'Vardagar 08.00 till 22.00 CET' },
       { label: 'Språk', value: 'Svenska, engelska, spanska och tyska' },
       { label: 'Leverans', value: 'Original i wet ink med DHL Express, eller hämtning i Stockholm' },
     ],
-    who: {
-      heading: 'För advokatbyråer och banker. Inte för privatpersoner.',
-      p1: 'Våra kunder är paralegals, biträdande jurister och transaktionsteam som behöver en handling bestyrkt för utlandet, ofta med en deadline. Vi kan closingkalendern, KYC-topparna och skillnaden mellan ett land i Haagkonventionen och ett land som fortfarande kräver legalisering.',
-      p2: 'Är du privatperson med en enda handling kan vi inte hjälpa dig. Länsstyrelsen har en förteckning över notarius publicus i varje län.',
-    },
     services: {
-      heading: 'Fyra saker vi gör, och en vi inte gör.',
+      heading: 'Fyra saker vi gör.',
       items: [
         { name: 'Bestyrkande på video', text: 'Vi kontrollerar identiteten med pass eller nationellt id-kort, ser underskriften göras och bestyrker den. Mötet tar fem till femton minuter.', meta: 'Samma dag' },
         { name: 'Apostille', text: 'Sedan 2005 får bara notarius publicus utfärda apostille i Sverige. Vi sätter den i samma möte som bestyrkandet, så det blir inget andra besök.', meta: 'Samma möte' },
         { name: 'Bestyrkta kopior', text: 'Bestyrkta kopior av pass, registreringsbevis och bolagsordning, klara att skicka med resten av akten.', meta: 'Samma dag' },
         { name: 'Volym på plats', text: 'Vid KYC-toppar och stora affärer kommer vi till er. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.', meta: 'Förbereds dagen innan' },
       ],
-      closing: 'Vi tar inte emot privatpersoner, och vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
+      closing: 'Vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
       link: 'Alla tjänster i detalj',
     },
     how: {
@@ -83,7 +77,7 @@ export const sv: Strings = {
     },
     hours: {
       heading: 'Öppet när motparten är vaken.',
-      text: 'Vardagar 08.00 till 22.00 svensk tid. Det är en hel arbetsdag i Madrid och London, och hela förmiddagen i New York.',
+      text: 'Vardagar 08.00 till 22.00 svensk tid, CET. Det är en hel arbetsdag i Madrid och London, och hela förmiddagen i New York.',
       opens: 'Öppnar 08.00',
       closes: 'Stänger 22.00',
       scaleAria: 'Öppettider på en 24-timmarsskala',
@@ -136,7 +130,7 @@ export const sv: Strings = {
       {
         heading: 'Vad vi inte gör',
         paragraphs: [
-          'Vi tar inte emot privatpersoner, och vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
+          'Vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
         ],
       },
     ],
@@ -187,7 +181,7 @@ export const sv: Strings = {
     title: 'Om Apostella',
     description: 'Två notarius publicus förordnade av länsstyrelsen. Varför vi bara arbetar med advokatbyråer och banker, och vem som skriver Notarieguiden.',
     h1: 'Två notarius publicus, förordnade av länsstyrelsen.',
-    lede: 'Apostella är en notarius publicus-byrå i Stockholm. Vi arbetar bara med advokatbyråer och banker, på video och på ert kontor.',
+    lede: 'Apostella är en notarius publicus-byrå med bas i Stockholm. Vi arbetar bara med advokatbyråer och banker, i digitala möten och på ert kontor.',
     sections: [
       {
         heading: 'Vad en notarius publicus är',
@@ -226,8 +220,8 @@ export const sv: Strings = {
     booking: 'Videomöte',
     bookingLink: 'Boka en tid',
     hours: 'Öppet',
-    hoursValue: 'Vardagar 08.00 till 22.00',
-    address: 'Hämtning och leverans i Stockholm',
+    hoursValue: 'Vardagar 08.00 till 22.00 CET',
+    address: 'Kontor, hämtning och leverans',
     ready: {
       heading: 'Det här ska du ha framme',
       text: 'Handlingen som pdf i slutlig version, pass eller nationellt id-kort för den som skriver under, mottagarlandet och antal original. För ett bolag även registreringsbeviset som visar vem som får teckna firman.',

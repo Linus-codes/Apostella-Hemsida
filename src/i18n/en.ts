@@ -1,7 +1,7 @@
 export const en = {
   siteName: 'Apostella',
   siteDescription:
-    'Notary public for law firms and banks. Notarisation on video, apostille in the same meeting and wet-ink originals by courier. Weekdays 08.00 to 22.00 CET.',
+    'Notary public based in Sweden, for law firms and banks. Notarisation and apostille in one digital meeting, wet-ink originals by courier. Weekdays 08.00 to 22.00 CET.',
   nav: {
     services: 'Services',
     how: 'How it works',
@@ -21,7 +21,6 @@ export const en = {
   tbc: 'to be confirmed',
   footer: {
     tagline: 'Notary public for law firms and banks.',
-    noPrivate: 'We do not take private individuals.',
     knowledge: 'Notarieguiden, our knowledge site in Swedish',
     company: 'Company',
     hours: 'Open',
@@ -44,7 +43,7 @@ export const en = {
   home: {
     title: 'Apostella. Notary public for law firms and banks',
     h1: 'Notarised and apostilled in one meeting, wherever your client is.',
-    lede: 'Apostella is a notary public firm in Sweden that works only with law firms and banks. We witness the signature on video, issue the apostille in the same session and send the original by express courier.',
+    lede: 'Apostella is a notary public firm based in Sweden that works only with law firms and banks. We witness the signing in a digital meeting where your client has verified their identity, issue both the notarisation and the apostille in the same session, and send the original by express courier.',
     primary: 'Book a meeting',
     secondary: 'How it works',
     facts: [
@@ -52,20 +51,15 @@ export const en = {
       { label: 'Languages', value: 'Swedish, English, Spanish and German' },
       { label: 'Delivery', value: 'Wet-ink originals by DHL Express, or collected in Stockholm' },
     ],
-    who: {
-      heading: 'For law firms and banks. Not for private individuals.',
-      p1: 'Our clients are paralegals, associates and transaction teams who need a document notarised for use abroad, often on a deadline. We know the closing calendar, the KYC peaks and the difference between a country in the Hague Convention and one that still requires legalisation.',
-      p2: 'If you are a private individual with a single document, we cannot help you. The county administrative board publishes a list of notaries public in each county.',
-    },
     services: {
-      heading: 'Four things we do, and one we do not.',
+      heading: 'Four things we do.',
       items: [
         { name: 'Notarisation on video', text: 'We verify identity with a passport or national ID card, watch the signature being made and certify it. The meeting takes five to fifteen minutes.', meta: 'Same day' },
         { name: 'Apostille', text: 'Since 2005 only a notary public can issue an apostille in Sweden. We issue it in the same meeting as the notarisation, so there is no second visit.', meta: 'Same meeting' },
         { name: 'Certified copies', text: 'Certified copies of passports, registration certificates and articles of association, ready to send with the rest of the file.', meta: 'Same day' },
         { name: 'Volume on site', text: 'For KYC peaks and large transactions we come to you. One large bank had 170 powers of attorney notarised and apostilled in a single working day.', meta: 'Prepared the day before' },
       ],
-      closing: 'We do not take private individuals, and we do not give legal advice. Your firm keeps the file. We put the stamps on it.',
+      closing: 'We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
       link: 'All services in detail',
     },
     how: {
@@ -81,7 +75,7 @@ export const en = {
     },
     hours: {
       heading: 'Open when your counterparty is awake.',
-      text: 'Weekdays from 08.00 to 22.00 Swedish time. That is a full working day in Madrid and London, and the whole morning in New York.',
+      text: 'Weekdays from 08.00 to 22.00 CET, Swedish time. That is a full working day in Madrid and London, and the whole morning in New York.',
       opens: 'Opens 08.00',
       closes: 'Closes 22.00',
       scaleAria: 'Opening hours shown on a 24-hour scale',
@@ -134,7 +128,7 @@ export const en = {
       {
         heading: 'What we do not do',
         paragraphs: [
-          'We do not take private individuals, and we do not give legal advice. Your firm keeps the file. We put the stamps on it.',
+          'We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
         ],
       },
     ],
@@ -185,7 +179,7 @@ export const en = {
     title: 'About Apostella',
     description: 'Two notaries public appointed by the county administrative board. Why we work only with law firms and banks, and who writes Notarieguiden.',
     h1: 'Two notaries public, appointed by the county administrative board.',
-    lede: 'Apostella is a notary public firm in Stockholm. We work only with law firms and banks, on video and at your office.',
+    lede: 'Apostella is a notary public firm based in Stockholm. We work only with law firms and banks, in digital meetings and at your office.',
     sections: [
       {
         heading: 'What a notary public is',
@@ -225,7 +219,7 @@ export const en = {
     bookingLink: 'Book a time',
     hours: 'Open',
     hoursValue: 'Weekdays 08.00 to 22.00 CET',
-    address: 'Collection and delivery in Stockholm',
+    address: 'Office, collection and delivery',
     ready: {
       heading: 'What to have ready',
       text: 'The document as a PDF in its final version, the signatory’s passport or national ID card, the recipient country and the number of originals. For a company signatory, the registration certificate that shows the signing authority.',

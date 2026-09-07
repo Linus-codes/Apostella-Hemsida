@@ -36,17 +36,7 @@ const certAlt = lang === 'sv'
     </div>
   </section>
 
-  <section class="paper section" aria-labelledby="who-heading">
-    <div class="wrap two">
-      <h2 id="who-heading">{h.who.heading}</h2>
-      <div class="prose">
-        <p>{h.who.p1}</p>
-        <p>{h.who.p2}</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="white section" aria-labelledby="services-heading">
+  <section class="paper section" aria-labelledby="services-heading">
     <div class="wrap">
       <h2 id="services-heading" class="section-head">{h.services.heading}</h2>
       <ul class="ledger">
@@ -65,7 +55,7 @@ const certAlt = lang === 'sv'
     </div>
   </section>
 
-  <section class="paper section" aria-labelledby="how-heading">
+  <section class="white section" aria-labelledby="how-heading">
     <div class="wrap two">
       <div>
         <h2 id="how-heading">{h.how.heading}</h2>
@@ -108,7 +98,7 @@ const certAlt = lang === 'sv'
   .hero::before { content: ''; position: absolute; top: -30%; left: 30%; width: 1100px; height: 700px; border-radius: 50%; background: radial-gradient(ellipse, rgba(23, 57, 212, 0.55) 0%, rgba(23, 57, 212, 0.22) 38%, rgba(11, 18, 48, 0) 70%); pointer-events: none; }
   .hero::after { content: ''; position: absolute; bottom: -35%; left: -10%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(111, 227, 200, 0.12) 0%, rgba(11, 18, 48, 0) 65%); pointer-events: none; }
   .hero-grid { position: relative; display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
-  @media (min-width: 900px) { .hero-grid { grid-template-columns: 7fr 5fr; gap: 64px; } }
+  @media (min-width: 900px) { .hero-grid { grid-template-columns: 6fr 5fr; gap: 56px; } }
   .hero h1 { font-size: 2.75rem; letter-spacing: -0.035em; line-height: 1; max-width: 14ch; }
   @media (min-width: 720px) { .hero h1 { font-size: 3.75rem; } }
   @media (min-width: 1100px) { .hero h1 { font-size: 5rem; } }

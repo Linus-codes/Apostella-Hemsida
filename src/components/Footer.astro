@@ -2,7 +2,7 @@
 import { strings } from '../i18n';
 import { routes, otherLang } from '../i18n/routes';
 import type { Lang, PageKey } from '../i18n/routes';
-import { company, contact, NOTARIEGUIDEN_URL } from '../data/site';
+import { company, contact, NOTARIEGUIDEN_URL, DRAFT } from '../data/site';
 import Tbc from './Tbc.astro';
 
 interface Props { lang: Lang; page: PageKey }
@@ -15,7 +15,6 @@ const alt = otherLang(lang);
     <div class="brand-col">
       <span class="mark" role="img" aria-label={t.nav.logoAria}></span>
       <p class="tagline">{t.footer.tagline}</p>
-      <p class="muted">{t.footer.noPrivate}</p>
       <p class="muted"><a href={NOTARIEGUIDEN_URL} hreflang="sv" lang="sv">{t.footer.knowledge}</a></p>
     </div>
     <nav aria-label={t.nav.menu}>
@@ -30,15 +29,16 @@ const alt = otherLang(lang);
     </nav>
     <div>
       <p class="head">{t.footer.contact}</p>
-      <p>{contact.email ? <a href={`mailto:${contact.email}`}>{contact.email}</a> : <Tbc lang={lang} />}</p>
-      <p>{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
+      {(contact.email || DRAFT) && <p>{contact.email ? <a href={`mailto:${contact.email}`}>{contact.email}</a> : <Tbc lang={lang} />}</p>}
+      {(contact.phone || DRAFT) && <p>{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>}
+      {company.address && <p>{company.address}</p>}
       <p class="head">{t.footer.hours}</p>
       <p>{t.footer.hoursValue}</p>
     </div>
     <div>
       <p class="head">{t.footer.company}</p>
-      <p>{company.legalName ? company.legalName : <Tbc lang={lang} />}</p>
-      <p>{t.footer.orgNumber}: {company.orgNumber ? company.orgNumber : <Tbc lang={lang} />}</p>
+      {(company.legalName || DRAFT) && <p>{company.legalName ? company.legalName : <Tbc lang={lang} />}</p>}
+      {(company.orgNumber || DRAFT) && <p>{t.footer.orgNumber}: {company.orgNumber ? company.orgNumber : <Tbc lang={lang} />}</p>}
       <p>{t.footer.seat}: {company.seat}</p>
       <p class="head">{t.footer.language}</p>
       <p><a href={routes[page][alt]} hreflang={alt} lang={alt}>{t.nav.switchLabel}</a></p>
