@@ -10,7 +10,7 @@ Yrkets egna föremål bär formspråket: apostillecertifikatets tio numrerade f�
 
 ## Idé i en mening
 
-Bläck och papper. Mörka bläckblå ytor ramar in ljusa pappersytor, och det enda som får vara stort och rörligt är certifikatet i hjälten. Certifikatet är ritat efter byråns egen apostille: gräddfärgat papper, rutnät med tio numrerade fält och tvåspråkiga underetiketter, notariernas namn, blå stämpel, underskrift och guldsigill.
+Bläck och papper. Mörka bläckblå ytor ramar in ljusa pappersytor, och det enda som får vara stort och rörligt är certifikatet i hjälten. Certifikatet är en förenklad apostille på gräddfärgat papper: tio numrerade fält med maskinskrivna värden, notariernas namn, underskrift och ett runt blått sigill med A-märket.
 
 ## Färger
 
@@ -33,7 +33,7 @@ Regler. Blått, himmel och mint är samma kalla familj och får aldrig sällskap
 
 ## Typografi
 
-En enda familj: Rethink Sans Variable, självhostad via fontsource. Det är apostella.com:s typsnitt sedan tidigare och Notarieguidens sedan v2. Ingen monospace någonstans, inte heller i certifikatillustrationen, eftersom byråns riktiga apostille är satt i en vanlig sans.
+En enda familj i gränssnittet: Rethink Sans Variable, självhostad via fontsource. Det är apostella.com:s typsnitt sedan tidigare och Notarieguidens sedan v2. JetBrains Mono används bara inne i certifikatillustrationen, där maskinskriven text är det som apostiller faktiskt ser ut som. Ingen monospace i etiketter, menyer eller metatext.
 
 | Roll | Vikt | Storlek desktop | Storlek mobil | Radavstånd | Spärrning |
 |---|---|---|---|---|---|
@@ -71,7 +71,7 @@ Tjänster visas som en liggare: rader med linjer, tjänstens namn stort till vä
 
 ## Rörelse
 
-En enda orkestrerad rörelse vid sidladdning på startsidan: underskriften i certifikatet ritas, sedan landar den blå stämpeln. Totalt under två sekunder, körs en gång. Ingen rörelse vid scroll, inga kort som glider in. Hover på länkar byter färg på 120 ms. prefers-reduced-motion stänger av allt. Inga skript, allt är CSS.
+En enda orkestrerad rörelse vid sidladdning på startsidan: underskriften i certifikatet ritas, sedan landar sigillet. Totalt under två sekunder, körs en gång. Ingen rörelse vid scroll, inga kort som glider in. Hover på länkar byter färg på 120 ms. prefers-reduced-motion stänger av allt. Inga skript, allt är CSS.
 
 ## Vad som valdes bort, och varför
 

@@ -21,7 +21,7 @@ export const contact = {
   email: 'apostella@lawstory.se',
   phone: '+46 73 721 94 38',
   // Länk till bokningssidan, till exempel Microsoft Bookings. Saknas den pekar knappen Boka möte på kontaktsidan.
-  bookingUrl: '',
+  bookingUrl: 'https://app.notarity.com/#/book/lawstory/',
 };
 
 // Öppettider enligt internt säljmaterial, bekräftas av ägaren.
