@@ -1,0 +1,34 @@
+---
+import { strings } from '../i18n';
+import type { Lang } from '../i18n/routes';
+import { contact } from '../data/site';
+import Tbc from './Tbc.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+---
+<section class="ink section band" aria-labelledby="contact-heading">
+  <div class="wrap">
+    <h2 id="contact-heading" class="section-head">{t.contactBand.heading}</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="meta">{t.contactBand.email}</p>
+        <p class="big">{contact.email ? <a href={`mailto:${contact.email}`}>{contact.email}</a> : <Tbc lang={lang} />}</p>
+      </div>
+      <div>
+        <p class="meta">{t.contactBand.phone}</p>
+        <p class="big">{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
+        <p class="meta hours">{t.contactBand.hours}</p>
+      </div>
+      <div>
+        <p class="meta">{t.contactBand.booking}</p>
+        <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{t.contactBand.bookingLink}</a> : <Tbc lang={lang} />}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .band { border-top: 1px solid var(--ink-line); }
+  .hours { margin-top: 6px; }
+</style>

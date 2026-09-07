@@ -1,0 +1,83 @@
+---
+import { strings } from '../i18n';
+import { routes, otherLang } from '../i18n/routes';
+import type { Lang, PageKey } from '../i18n/routes';
+import { contact } from '../data/site';
+
+interface Props { lang: Lang; page: PageKey }
+const { lang, page } = Astro.props;
+const t = strings[lang];
+const alt = otherLang(lang);
+const items: { key: PageKey; text: string }[] = [
+  { key: 'services', text: t.nav.services },
+  { key: 'how', text: t.nav.how },
+  { key: 'pricing', text: t.nav.pricing },
+  { key: 'about', text: t.nav.about },
+  { key: 'contact', text: t.nav.contact },
+];
+const bookHref = contact.bookingUrl || routes.contact[lang];
+const switchHref = routes[page][alt];
+---
+<header class="site-header ink">
+  <div class="wrap row">
+    <a class="brand" href={routes.home[lang]} aria-label={t.nav.homeAria}>
+      <span class="mark" role="img" aria-label={t.nav.logoAria}></span>
+      <span class="wordmark">Apostella</span>
+    </a>
+    <nav class="desktop" aria-label={t.nav.menu}>
+      <ul>
+        {items.map((i) => (
+          <li><a href={routes[i.key][lang]} aria-current={i.key === page ? 'page' : undefined}>{i.text}</a></li>
+        ))}
+      </ul>
+      <a class="lang" href={switchHref} hreflang={alt} lang={alt} aria-label={t.nav.switchAria}>{t.nav.switchLabel}</a>
+      <a class="button" href={bookHref}>{t.nav.book}</a>
+    </nav>
+    <details class="mobile">
+      <summary aria-label={t.nav.openMenu}><span class="burger" aria-hidden="true"></span>{t.nav.menu}</summary>
+      <nav aria-label={t.nav.menu}>
+        <ul>
+          {items.map((i) => (
+            <li><a href={routes[i.key][lang]} aria-current={i.key === page ? 'page' : undefined}>{i.text}</a></li>
+          ))}
+          <li><a href={switchHref} hreflang={alt} lang={alt}>{t.nav.switchLabel}</a></li>
+          <li><a class="book" href={bookHref}>{t.nav.book}</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header { border-bottom: 1px solid var(--ink-line); }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 68px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
+  .brand:hover { color: var(--white); }
+  .mark { display: inline-block; width: 30px; height: 30px; background-color: var(--white); -webkit-mask: url('/apostella-marke.png') center / contain no-repeat; mask: url('/apostella-marke.png') center / contain no-repeat; }
+  .wordmark { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1; }
+  .desktop { display: none; }
+  .desktop ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; }
+  .desktop ul a { color: var(--sky-2); text-decoration: none; font-weight: 500; font-size: 0.9375rem; padding: 6px 0; border-bottom: 2px solid transparent; }
+  .desktop ul a:hover { color: var(--white); }
+  .desktop ul a[aria-current='page'] { color: var(--white); border-bottom-color: var(--mint); }
+  .lang { color: var(--sky); text-decoration: none; font-size: 0.9375rem; font-weight: 500; }
+  .lang:hover { color: var(--white); text-decoration: underline; }
+  .desktop .button { min-height: 44px; padding: 0 18px; font-size: 0.9375rem; }
+  .mobile summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.9375rem; color: var(--white); padding: 10px 0; }
+  .mobile summary::-webkit-details-marker { display: none; }
+  .burger { width: 20px; height: 2px; background: var(--white); position: relative; }
+  .burger::before, .burger::after { content: ''; position: absolute; left: 0; width: 20px; height: 2px; background: var(--white); }
+  .burger::before { top: -6px; }
+  .burger::after { top: 6px; }
+  .mobile nav { position: absolute; left: 0; right: 0; background: var(--ink); border-top: 1px solid var(--ink-line); border-bottom: 1px solid var(--ink-line); padding: 8px var(--gutter) 24px; z-index: 20; }
+  .mobile ul { list-style: none; margin: 0; padding: 0; }
+  .mobile li a { display: block; padding: 14px 0; border-bottom: 1px solid var(--ink-line); color: var(--white); text-decoration: none; font-weight: 600; font-size: 1.0625rem; }
+  .mobile li a[aria-current='page'] { color: var(--mint); }
+  .mobile li a.book { border-bottom: 0; color: var(--sky); }
+  @media (min-width: 960px) {
+    .site-header { position: sticky; top: 0; z-index: 10; }
+    .row { min-height: 76px; }
+    .desktop { display: flex; align-items: center; gap: 28px; }
+    .mobile { display: none; }
+  }
+</style>

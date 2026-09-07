@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import ContactBand from '../ContactBand.astro';
+import { strings } from '../../i18n';
+import type { Lang } from '../../i18n/routes';
+import { NOTARIEGUIDEN_URL } from '../../data/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const a = t.about;
+const last = a.sections.length - 1;
+---
+<Base lang={lang} page="about" title={a.title} description={a.description}>
+  <PageHead heading={a.h1} lede={a.lede} />
+  <div class="white section rows">
+    {a.sections.map((sec, i) => (
+      <section class="wrap two row" aria-labelledby={`about-${i}`}>
+        <h2 id={`about-${i}`}>{sec.heading}</h2>
+        <div class="prose">
+          {sec.paragraphs.map((p) => <p>{p}</p>)}
+          {i === last && <p class="link"><a class="button ghost" href={NOTARIEGUIDEN_URL} hreflang="sv" lang="sv">{a.knowledgeLink}</a></p>}
+        </div>
+      </section>
+    ))}
+  </div>
+  <ContactBand lang={lang} />
+</Base>
+
+<style>
+  .rows { padding-top: 24px; }
+  @media (min-width: 900px) { .rows { padding-top: 40px; } }
+  .row { padding-top: 40px; padding-bottom: 40px; }
+  .row + .row { border-top: 1px solid var(--line); }
+  @media (min-width: 900px) { .row { padding-top: 56px; padding-bottom: 56px; } .row + .row { border-top: 0; } .row + .row > * { border-top: 1px solid var(--line); padding-top: 56px; } }
+  .row h2 { font-size: 1.75rem; max-width: 16ch; }
+  @media (min-width: 720px) { .row h2 { font-size: 2.25rem; } }
+  .prose p:last-child { margin-bottom: 0; }
+  .link { margin-top: 24px; }
+</style>

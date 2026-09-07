@@ -1,0 +1,13 @@
+---
+import { DRAFT } from '../data/site';
+import { strings } from '../i18n';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+---
+{DRAFT && (
+  <div class="draft" role="status">
+    <div class="wrap">{t.draft}</div>
+  </div>
+)}

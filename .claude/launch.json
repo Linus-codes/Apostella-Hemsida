@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "astro",
+      "runtimeExecutable": "/bin/zsh",
+      "runtimeArgs": ["-ic", "export PATH=\"$HOME/.nvm/versions/node/v24.20.0/bin:$PATH\"; npm run dev -- --port 4321 --host 127.0.0.1"],
+      "port": 4321
+    }
+  ]
+}

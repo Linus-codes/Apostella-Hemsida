@@ -1,0 +1,70 @@
+---
+import { strings } from '../i18n';
+import { routes, otherLang } from '../i18n/routes';
+import type { Lang, PageKey } from '../i18n/routes';
+import { company, contact, NOTARIEGUIDEN_URL } from '../data/site';
+import Tbc from './Tbc.astro';
+
+interface Props { lang: Lang; page: PageKey }
+const { lang, page } = Astro.props;
+const t = strings[lang];
+const alt = otherLang(lang);
+---
+<footer class="site-footer ink">
+  <div class="wrap cols">
+    <div class="brand-col">
+      <span class="mark" role="img" aria-label={t.nav.logoAria}></span>
+      <p class="tagline">{t.footer.tagline}</p>
+      <p class="muted">{t.footer.noPrivate}</p>
+      <p class="muted"><a href={NOTARIEGUIDEN_URL} hreflang="sv" lang="sv">{t.footer.knowledge}</a></p>
+    </div>
+    <nav aria-label={t.nav.menu}>
+      <ul>
+        <li><a href={routes.services[lang]}>{t.nav.services}</a></li>
+        <li><a href={routes.how[lang]}>{t.nav.how}</a></li>
+        <li><a href={routes.pricing[lang]}>{t.nav.pricing}</a></li>
+        <li><a href={routes.about[lang]}>{t.nav.about}</a></li>
+        <li><a href={routes.contact[lang]}>{t.nav.contact}</a></li>
+        <li><a href={routes.privacy[lang]}>{t.footer.privacy}</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="head">{t.footer.contact}</p>
+      <p>{contact.email ? <a href={`mailto:${contact.email}`}>{contact.email}</a> : <Tbc lang={lang} />}</p>
+      <p>{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
+      <p class="head">{t.footer.hours}</p>
+      <p>{t.footer.hoursValue}</p>
+    </div>
+    <div>
+      <p class="head">{t.footer.company}</p>
+      <p>{company.legalName ? company.legalName : <Tbc lang={lang} />}</p>
+      <p>{t.footer.orgNumber}: {company.orgNumber ? company.orgNumber : <Tbc lang={lang} />}</p>
+      <p>{t.footer.seat}: {company.seat}</p>
+      <p class="head">{t.footer.language}</p>
+      <p><a href={routes[page][alt]} hreflang={alt} lang={alt}>{t.nav.switchLabel}</a></p>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="wrap bottom-row">
+      <span>Apostella, Sweden</span>
+      <span>{t.footer.noCookies}</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { border-top: 1px solid var(--ink-line); }
+  .cols { display: grid; grid-template-columns: 1fr; gap: 36px; padding-top: 56px; padding-bottom: 56px; }
+  @media (min-width: 760px) { .cols { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-top: 72px; padding-bottom: 72px; } }
+  .mark { display: inline-block; width: 36px; height: 36px; margin-bottom: 18px; background-color: var(--sky); -webkit-mask: url('/apostella-marke.png') center / contain no-repeat; mask: url('/apostella-marke.png') center / contain no-repeat; }
+  .tagline { color: var(--white); font-weight: 500; margin-bottom: 8px; }
+  p { margin: 0 0 8px; font-size: 0.9375rem; }
+  .head { color: var(--sky); margin-top: 18px; }
+  .head:first-child { margin-top: 0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 10px; }
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .bottom { border-top: 1px solid var(--ink-line); }
+  .bottom-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 18px; padding-bottom: 18px; font-size: 0.875rem; color: var(--sky); }
+</style>

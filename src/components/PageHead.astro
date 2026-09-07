@@ -1,0 +1,21 @@
+---
+// Mörkt rubrikband överst på undersidor. Exakt en h1.
+interface Props { heading: string; lede?: string }
+const { heading, lede } = Astro.props;
+---
+<section class="ink head">
+  <div class="wrap">
+    <h1>{heading}</h1>
+    {lede && <p class="lede">{lede}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .head { padding: 56px 0 56px; position: relative; overflow: hidden; }
+  @media (min-width: 900px) { .head { padding: 88px 0 80px; } }
+  .head::before { content: ''; position: absolute; top: -40%; left: 55%; width: 900px; height: 520px; border-radius: 50%; background: radial-gradient(ellipse, rgba(23, 57, 212, 0.45) 0%, rgba(23, 57, 212, 0.18) 40%, rgba(11, 18, 48, 0) 70%); pointer-events: none; }
+  .head > .wrap { position: relative; }
+  h1 { max-width: 18ch; }
+  .lede { margin: 20px 0 0; color: var(--sky-2); }
+</style>

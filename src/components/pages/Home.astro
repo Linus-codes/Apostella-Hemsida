@@ -1,0 +1,122 @@
+---
+import Base from '../../layouts/Base.astro';
+import Certificate from '../Certificate.astro';
+import ContactBand from '../ContactBand.astro';
+import { strings } from '../../i18n';
+import { routes } from '../../i18n/routes';
+import type { Lang } from '../../i18n/routes';
+import { contact, NOTARIEGUIDEN_URL } from '../../data/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const h = t.home;
+const bookHref = contact.bookingUrl || routes.contact[lang];
+const certAlt = lang === 'sv'
+  ? 'Ett apostillecertifikat med tio numrerade fält, en underskrift och ett runt sigill med Apostellas märke.'
+  : 'An apostille certificate with ten numbered fields, a signature and a round seal with the Apostella mark.';
+---
+<Base lang={lang} page="home" title={h.title} description={t.siteDescription} fullTitle>
+  <section class="ink hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>{h.h1}</h1>
+        <p class="lede">{h.lede}</p>
+        <div class="actions">
+          <a class="button" href={bookHref}>{h.primary}</a>
+          <a class="textlink" href={routes.how[lang]}>{h.secondary}</a>
+        </div>
+        <dl class="facts">
+          {h.facts.map((f) => (<div><dt>{f.label}</dt><dd>{f.value}</dd></div>))}
+        </dl>
+      </div>
+      <div class="hero-figure">
+        <Certificate alt={certAlt} animate />
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section" aria-labelledby="who-heading">
+    <div class="wrap two">
+      <h2 id="who-heading">{h.who.heading}</h2>
+      <div class="prose">
+        <p>{h.who.p1}</p>
+        <p>{h.who.p2}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="white section" aria-labelledby="services-heading">
+    <div class="wrap">
+      <h2 id="services-heading" class="section-head">{h.services.heading}</h2>
+      <ul class="ledger">
+        {h.services.items.map((s) => (
+          <li>
+            <div>
+              <h3><a href={routes.services[lang]}>{s.name}</a></h3>
+              <p class="meta">{s.meta}</p>
+            </div>
+            <p>{s.text}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="closing">{h.services.closing}</p>
+      <p><a class="textlink" href={routes.services[lang]}>{h.services.link}</a></p>
+    </div>
+  </section>
+
+  <section class="paper section" aria-labelledby="how-heading">
+    <div class="wrap two">
+      <div>
+        <h2 id="how-heading">{h.how.heading}</h2>
+        <p class="after-head"><a class="textlink" href={routes.how[lang]}>{h.how.link}</a></p>
+      </div>
+      <ol class="steps">
+        {h.how.steps.map((s) => (<li><h3>{s.name}</h3><p>{s.text}</p></li>))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="ink section" aria-labelledby="hours-heading">
+    <div class="wrap two">
+      <h2 id="hours-heading">{h.hours.heading}</h2>
+      <div class="hours">
+        <p class="hours-text">{h.hours.text}</p>
+        <div class="hours-bar" role="img" aria-label={h.hours.scaleAria}><span></span></div>
+        <ul class="hours-scale" aria-hidden="true"><li>00</li><li>06</li><li>12</li><li>18</li><li>24</li></ul>
+        <ul class="hours-open"><li>{h.hours.opens}</li><li>{h.hours.closes}</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section" aria-labelledby="knowledge-heading">
+    <div class="wrap two">
+      <h2 id="knowledge-heading">{h.knowledge.heading}</h2>
+      <div class="prose">
+        <p>{h.knowledge.text}</p>
+        <p><a class="button ghost" href={NOTARIEGUIDEN_URL} hreflang="sv" lang="sv">{h.knowledge.link}</a></p>
+      </div>
+    </div>
+  </section>
+
+  <ContactBand lang={lang} />
+</Base>
+
+<style>
+  .hero { position: relative; overflow: hidden; padding: 56px 0 64px; }
+  @media (min-width: 900px) { .hero { padding: 96px 0 104px; } }
+  .hero::before { content: ''; position: absolute; top: -30%; left: 30%; width: 1100px; height: 700px; border-radius: 50%; background: radial-gradient(ellipse, rgba(23, 57, 212, 0.55) 0%, rgba(23, 57, 212, 0.22) 38%, rgba(11, 18, 48, 0) 70%); pointer-events: none; }
+  .hero::after { content: ''; position: absolute; bottom: -35%; left: -10%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(111, 227, 200, 0.12) 0%, rgba(11, 18, 48, 0) 65%); pointer-events: none; }
+  .hero-grid { position: relative; display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+  @media (min-width: 900px) { .hero-grid { grid-template-columns: 7fr 5fr; gap: 64px; } }
+  .hero h1 { font-size: 2.75rem; letter-spacing: -0.035em; line-height: 1; max-width: 14ch; }
+  @media (min-width: 720px) { .hero h1 { font-size: 3.75rem; } }
+  @media (min-width: 1100px) { .hero h1 { font-size: 5rem; } }
+  .hero .lede { margin: 28px 0 32px; color: var(--sky-2); }
+  .hero .facts { margin-top: 44px; }
+  .hero-figure { display: flex; justify-content: center; }
+  @media (min-width: 900px) { .hero-figure { justify-content: flex-end; } }
+  .closing { margin: 28px 0 12px; max-width: var(--measure); }
+  .after-head { margin-top: 20px; }
+  .hours-text { max-width: 56ch; margin-bottom: 8px; }
+</style>

@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import { strings } from '../../i18n';
+import type { Lang } from '../../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const p = t.privacy;
+---
+<Base lang={lang} page="privacy" title={p.title} description={p.description}>
+  <PageHead heading={p.h1} />
+  <div class="white section">
+    <div class="wrap">
+      <div class="prose">
+        <p class="meta">{p.updated} {p.updatedDate}.</p>
+        {p.sections.map((sec, i) => (
+          <section aria-labelledby={`privacy-${i}`}>
+            <h2 id={`privacy-${i}`}>{sec.heading}</h2>
+            <p>{sec.text}</p>
+          </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>

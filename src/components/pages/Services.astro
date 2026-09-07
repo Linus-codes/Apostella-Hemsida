@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import ContactBand from '../ContactBand.astro';
+import { strings } from '../../i18n';
+import type { Lang } from '../../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const s = t.services;
+---
+<Base lang={lang} page="services" title={s.title} description={s.description}>
+  <PageHead heading={s.h1} lede={s.lede} />
+  <div class="white section rows">
+    {s.sections.map((sec, i) => (
+      <section class="wrap two row" aria-labelledby={`sec-${i}`}>
+        <h2 id={`sec-${i}`}>{sec.heading}</h2>
+        <div class="prose">{sec.paragraphs.map((p) => <p>{p}</p>)}</div>
+      </section>
+    ))}
+  </div>
+  <ContactBand lang={lang} />
+</Base>
+
+<style>
+  .rows { padding-top: 24px; }
+  @media (min-width: 900px) { .rows { padding-top: 40px; } }
+  .row { padding-top: 40px; padding-bottom: 40px; }
+  .row + .row { border-top: 1px solid var(--line); }
+  @media (min-width: 900px) { .row { padding-top: 56px; padding-bottom: 56px; } .row + .row { border-top: 0; } .row + .row > * { border-top: 1px solid var(--line); padding-top: 56px; } }
+  .row h2 { font-size: 1.75rem; max-width: 16ch; }
+  @media (min-width: 720px) { .row h2 { font-size: 2.25rem; } }
+  .prose p:last-child { margin-bottom: 0; }
+</style>

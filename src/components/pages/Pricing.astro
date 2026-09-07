@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import ContactBand from '../ContactBand.astro';
+import { strings } from '../../i18n';
+import type { Lang } from '../../i18n/routes';
+import { prices } from '../../data/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const p = t.pricing;
+const fmt = new Intl.DateTimeFormat(lang === 'sv' ? 'sv-SE' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const checked = fmt.format(new Date(prices.checked));
+const names = p.items as Record<string, { name: string; desc: string }>;
+---
+<Base lang={lang} page="pricing" title={p.title} description={p.description}>
+  <PageHead heading={p.h1} lede={p.lede} />
+  <div class="white section">
+    <div class="wrap">
+      <ul class="prices">
+        {prices.items.map((item) => (
+          <li>
+            <h3>{names[item.key].name}</h3>
+            <span class="price">{item.amount === null ? p.onRequest : `${item.amount} ${prices.currency}`}</span>
+            <p class="desc">{names[item.key].desc}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="meta note">{p.checked} {checked}. {p.vat}</p>
+    </div>
+  </div>
+  <div class="paper section">
+    <div class="wrap two">
+      <h2>{p.includes.heading}</h2>
+      <div class="prose">
+        <p>{p.includes.p1}</p>
+        <p>{p.includes.p2}</p>
+      </div>
+    </div>
+  </div>
+  <ContactBand lang={lang} />
+</Base>
+
+<style>
+  .prices h3 { font-size: 1.25rem; margin: 0; }
+  .note { margin-top: 20px; max-width: 760px; }
+</style>

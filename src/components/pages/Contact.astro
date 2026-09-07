@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import Tbc from '../Tbc.astro';
+import { strings } from '../../i18n';
+import type { Lang } from '../../i18n/routes';
+import { contact, company } from '../../data/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+const c = t.contact;
+---
+<Base lang={lang} page="contact" title={c.title} description={c.description}>
+  <PageHead heading={c.h1} lede={c.lede} />
+  <div class="white section">
+    <div class="wrap">
+      <div class="contact-grid dark-text">
+        <div>
+          <p class="meta">{c.email}</p>
+          <p class="big">{contact.email ? <a href={`mailto:${contact.email}`}>{contact.email}</a> : <Tbc lang={lang} />}</p>
+        </div>
+        <div>
+          <p class="meta">{c.phone}</p>
+          <p class="big">{contact.phone ? <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a> : <Tbc lang={lang} />}</p>
+        </div>
+        <div>
+          <p class="meta">{c.booking}</p>
+          <p class="big">{contact.bookingUrl ? <a href={contact.bookingUrl}>{c.bookingLink}</a> : <Tbc lang={lang} />}</p>
+        </div>
+        <div>
+          <p class="meta">{c.hours}</p>
+          <p class="big">{c.hoursValue}</p>
+        </div>
+        <div>
+          <p class="meta">{c.address}</p>
+          <p class="big">{company.address ? company.address : <Tbc lang={lang} />}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paper section">
+    <div class="wrap two">
+      <h2>{c.ready.heading}</h2>
+      <div class="prose"><p>{c.ready.text}</p></div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .dark-text .big a { color: var(--blue); text-decoration: none; }
+  .dark-text .big a:hover { color: var(--blue-deep); text-decoration: underline; }
+</style>

@@ -1,0 +1,9 @@
+---
+// Visar "bekräftas" där en uppgift saknas i src/data/site.ts. Används bara i utkastläge.
+import { strings } from '../i18n';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = strings[lang];
+---
+<span class="placeholder">{t.tbc}</span>

@@ -1,0 +1,87 @@
+---
+import '@fontsource-variable/rethink-sans';
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DraftBar from '../components/DraftBar.astro';
+import { strings } from '../i18n';
+import { routes, htmlLang, ogLocale, otherLang } from '../i18n/routes';
+import type { Lang, PageKey } from '../i18n/routes';
+import { SITE_URL, company, contact } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+  title: string;
+  description: string;
+  fullTitle?: boolean;
+}
+const { lang, page, title, description, fullTitle = false } = Astro.props;
+const t = strings[lang];
+const pageTitle = fullTitle ? title : `${title} | ${t.siteName}`;
+const site = Astro.site ?? new URL(SITE_URL);
+const canonical = new URL(routes[page][lang], site);
+const alt = otherLang(lang);
+const alternateUrl = new URL(routes[page][alt], site);
+const xDefault = new URL(routes[page].en, site);
+const ogImage = new URL('/og-image.png', site);
+
+// Strukturerad data. Bara uppgifter som finns i datafilen skrivs ut.
+const ld: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  name: company.name,
+  url: site.toString(),
+  areaServed: 'SE',
+  availableLanguage: ['sv', 'en', 'es', 'de'],
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '22:00',
+  },
+};
+if (contact.email) ld.email = contact.email;
+if (contact.phone) ld.telephone = contact.phone;
+if (company.legalName) ld.legalName = company.legalName;
+---
+<!doctype html>
+<html lang={htmlLang[lang]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={htmlLang[lang]} href={canonical} />
+    <link rel="alternate" hreflang={htmlLang[alt]} href={alternateUrl} />
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#0b1230" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={t.siteName} />
+    <meta property="og:locale" content={ogLocale[lang]} />
+    <meta property="og:locale:alternate" content={ogLocale[alt]} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(ld)} />
+  </head>
+  <body>
+    <a class="skip visually-hidden" href="#content">{t.nav.skip}</a>
+    <DraftBar lang={lang} />
+    <Header lang={lang} page={page} />
+    <main id="content">
+      <slot />
+    </main>
+    <Footer lang={lang} page={page} />
+  </body>
+</html>
