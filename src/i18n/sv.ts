@@ -51,7 +51,7 @@ export const sv: Strings = {
     facts: [
       { label: 'Öppet', value: 'Vardagar 08.00 till 22.00 CET' },
       { label: 'Språk', value: 'Svenska, engelska, spanska och tyska' },
-      { label: 'Leverans', value: 'Original i wet ink, levererade personligen till ert kontor i Stockholm eller med DHL Express i hela världen' },
+      { label: 'Leverans', value: 'Original i wet ink, levererade personligen till ert kontor i Stockholm eller med expressbud i hela världen' },
     ],
     global: {
       heading: 'Tre firmatecknare, tre tidszoner, ett möte.',
@@ -76,7 +76,7 @@ export const sv: Strings = {
         { name: 'Vi kontrollerar handlingen och vägen', text: 'Vem som får skriva under, och om mottagarlandet kräver apostille eller legalisering.' },
         { name: 'Klienten skriver under på video', text: 'Med pass eller nationellt id-kort, inför notarien, var som helst i världen. Ungefär fem minuter per person.' },
         { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'I samma möte. Inget andra besök, ingen andra notarie.' },
-        { name: 'Originalet är på väg', text: 'Levereras personligen till ert kontor i Stockholm, eller med DHL Express till byrån eller motparten. Ingen behöver lämna sitt skrivbord.' },
+        { name: 'Originalet är på väg', text: 'Levereras personligen till ert kontor i Stockholm, eller med expressbud till byrån eller motparten. Ingen behöver lämna sitt skrivbord.' },
       ],
       link: 'Så går det till, i detalj',
     },
@@ -150,7 +150,7 @@ export const sv: Strings = {
       { name: 'Vi kontrollerar handlingen och vägen', text: 'Vi läser handlingen, bekräftar vem som får skriva under och säger om mottagarlandet kräver apostille eller legalisering. Det som saknas rättas före mötet, inte efter.' },
       { name: 'Klienten skriver under på video', text: 'De som ska skriva under kopplar upp sig med pass eller nationellt id-kort, var i världen de än sitter. Tre firmatecknare i tre länder kan skriva under i samma möte. Notarien kontrollerar varje identitet, ser underskriften göras och bestyrker den. Ungefär fem minuter per person.' },
       { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'Handlingen skrivs ut, undertecknas och stämplas av notarien, och apostillen sätts i samma möte. Inget andra besök, ingen andra notarie.' },
-      { name: 'Originalet är på väg', text: 'I Stockholm levererar vi originalet personligen till ert kontor, samma dag. Annars går det med DHL Express till byrån eller direkt till motparten. Ingen behöver lämna sitt skrivbord.' },
+      { name: 'Originalet är på väg', text: 'I Stockholm levererar vi originalet personligen till ert kontor, samma dag. Annars går det med expressbud till byrån eller direkt till motparten. Ingen behöver lämna sitt skrivbord.' },
     ],
     ready: {
       heading: 'Det här ska du ha framme',

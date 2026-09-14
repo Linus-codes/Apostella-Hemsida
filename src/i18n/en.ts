@@ -49,7 +49,7 @@ export const en = {
     facts: [
       { label: 'Open', value: 'Weekdays 08.00 to 22.00 CET' },
       { label: 'Languages', value: 'Swedish, English, Spanish and German' },
-      { label: 'Delivery', value: 'Wet-ink originals delivered in person to your office in Stockholm, or by DHL Express worldwide' },
+      { label: 'Delivery', value: 'Wet-ink originals delivered in person to your office in Stockholm, or by express courier worldwide' },
     ],
     global: {
       heading: 'Three signatories, three time zones, one meeting.',
@@ -74,7 +74,7 @@ export const en = {
         { name: 'We check the document and the route', text: 'Who is authorised to sign, and whether the recipient country requires an apostille or legalisation.' },
         { name: 'Your client signs on video', text: 'With a passport or national ID card, in front of the notary, from anywhere in the world. About five minutes per signatory.' },
         { name: 'We print, sign in wet ink and attach the apostille', text: 'In the same session. No second visit, no second notary.' },
-        { name: 'The original is on its way', text: 'Delivered in person to your office in Stockholm, or by DHL Express to your firm or the counterparty. Nobody has to leave their desk.' },
+        { name: 'The original is on its way', text: 'Delivered in person to your office in Stockholm, or by express courier to your firm or the counterparty. Nobody has to leave their desk.' },
       ],
       link: 'How it works in detail',
     },
@@ -148,7 +148,7 @@ export const en = {
       { name: 'We check the document and the route', text: 'We read the document, confirm who is authorised to sign and tell you whether the recipient country requires an apostille or legalisation. Missing details are fixed before the meeting, not after.' },
       { name: 'Your client signs on video', text: 'The signatories join the video meeting with a passport or national ID card, from wherever in the world they are. Three signatories in three countries can sign in the same meeting. The notary verifies each identity, watches the signature being made and certifies it. About five minutes per signatory.' },
       { name: 'We print, sign in wet ink and attach the apostille', text: 'The document is printed, signed and stamped by the notary, and the apostille is attached in the same session. No second visit, no second notary.' },
-      { name: 'The original is on its way', text: 'In Stockholm we deliver the original in person to your office, the same day. Elsewhere it goes by DHL Express to your firm or directly to the counterparty. Nobody has to leave their desk.' },
+      { name: 'The original is on its way', text: 'In Stockholm we deliver the original in person to your office, the same day. Elsewhere it goes by express courier to your firm or directly to the counterparty. Nobody has to leave their desk.' },
     ],
     ready: {
       heading: 'What to have ready',
