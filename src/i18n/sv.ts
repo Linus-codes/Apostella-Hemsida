@@ -56,7 +56,7 @@ export const sv: Strings = {
     global: {
       heading: 'Tre firmatecknare, tre tidszoner, ett möte.',
       p1: 'De som ska skriva under kan sitta var som helst i världen och ändå skriva under i samma möte. En i New York, en i New Mexico och en i Stockholm: de verifierar sin identitet, skriver under inför notarien och är klara på ungefär fem minuter.',
-      p2: 'Många klienter frågar om det ens är möjligt. Det är det. Notarien möter alla i ett videomöte, och originalet är på väg inom 24 timmar.',
+      p2: 'Många klienter frågar om det ens är möjligt. Det är det. Notarien möter alla i ett videomöte, och originalet når i regel klienten inom en till två arbetsdagar.',
     },
     services: {
       heading: 'Fyra saker vi gör.',
@@ -73,7 +73,7 @@ export const sv: Strings = {
       heading: 'Från bokning till original hos mottagaren.',
       steps: [
         { name: 'Du bokar en tid och skickar handlingen', text: 'Med mottagarland och antal original.' },
-        { name: 'Vi kontrollerar handlingen och vägen', text: 'Vem som får skriva under, och om mottagarlandet kräver apostille eller legalisering.' },
+        { name: 'Vi kontrollerar handlingen', text: 'Vem som får skriva under, och att handlingen är klar att bestyrkas och apostilleras. Vad mottagarlandet kräver avgör byrån, och vi svarar på frågor längs vägen.' },
         { name: 'Klienten skriver under på video', text: 'Med pass eller nationellt id-kort, inför notarien, var som helst i världen.' },
         { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'I samma möte. Inget andra besök, ingen andra notarie.' },
         { name: 'Originalet är på väg', text: 'Levereras personligen till ert kontor i Stockholm, eller med expressbud till byrån eller motparten. Ingen behöver lämna sitt skrivbord.' },
@@ -97,7 +97,7 @@ export const sv: Strings = {
     title: 'Tjänster',
     description: 'Bestyrkande på video, apostille i samma möte, bestyrkta kopior och volym på plats hos er. För advokatbyråer och banker i Sverige och utomlands.',
     h1: 'Bestyrkande och apostille i samma möte.',
-    lede: 'Två notarius publicus i bolaget, förordnade av länsstyrelsen. Allt nedan görs på video eller på ert kontor, och originalet är på väg inom 24 timmar.',
+    lede: 'Två notarius publicus i bolaget, förordnade av länsstyrelsen. Allt nedan görs på video eller på ert kontor, och originalet når i regel klienten inom en till två arbetsdagar.',
     sections: [
       {
         heading: 'Bestyrkande på video',
@@ -110,7 +110,7 @@ export const sv: Strings = {
         heading: 'Apostille',
         paragraphs: [
           'En apostille är intyget som gör en svensk handling giltig i länderna i Haagkonventionen från 1961. Sedan 1 januari 2005 får bara notarius publicus utfärda den i Sverige, enligt Utrikesdepartementet. Vi sätter den i samma möte som bestyrkandet, på svenska, engelska, spanska eller tyska.',
-          'För länder utanför konventionen behöver handlingen i stället legaliseras hos Utrikesdepartementet och ambassaden. Sedan 1 juli 2025 legaliserar departementet bara handlingar på svenska eller engelska, enligt förordning 2025:549. Vi säger vilken väg som gäller före mötet.',
+          'För länder utanför konventionen behöver handlingen i stället legaliseras hos Utrikesdepartementet och ambassaden. Sedan 1 juli 2025 legaliserar departementet bara handlingar på svenska eller engelska, enligt förordning 2025:549. Vilken väg mottagarlandet kräver avgör byrån, och vi svarar på frågor före mötet.',
         ],
       },
       {
@@ -122,7 +122,7 @@ export const sv: Strings = {
       {
         heading: 'Volym på ert kontor',
         paragraphs: [
-          'KYC-deadlines och stora affärer ger toppar: hundra fullmakter som ska vara klara innan en marknad öppnar. Vi kommer till ert kontor, med två notarier när volymen kräver det, och förbereder dagen innan, så att stämplingen tar minuter per handling i stället för timmar. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.',
+          'KYC-deadlines och stora affärer ger toppar: hundra fullmakter som ska vara klara innan en marknad öppnar. Vi kommer till ert kontor och förbereder dagen innan, så att stämplingen tar minuter per handling i stället för timmar. Med två notarius publicus utfärdas bestyrkandet och apostillen samtidigt. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.',
           'Banker och storbyråer kan ha oss på retainer, med en faktura och fast pris per handling.',
         ],
       },
@@ -147,7 +147,7 @@ export const sv: Strings = {
     lede: 'Ett bestyrkande med apostille tar ett möte. Förberedelsen dagen innan avgör om det tar fem minuter eller en eftermiddag.',
     steps: [
       { name: 'Du bokar en tid och skickar handlingen', text: 'Skicka handlingen till oss, ange mottagarland och hur många original du behöver. Boka en tid som passar den som ska skriva under, vardagar mellan 08.00 och 22.00 svensk tid.' },
-      { name: 'Vi kontrollerar handlingen och vägen', text: 'Vi läser handlingen, bekräftar vem som får skriva under och säger om mottagarlandet kräver apostille eller legalisering. Det som saknas rättas före mötet, inte efter.' },
+      { name: 'Vi kontrollerar handlingen', text: 'Vi läser handlingen och bekräftar vem som får skriva under. Vad mottagarlandet kräver avgör byrån, och vi svarar på frågor längs vägen. Det som saknas rättas före mötet, inte efter.' },
       { name: 'Klienten skriver under på video', text: 'De som ska skriva under kopplar upp sig med pass eller nationellt id-kort, var i världen de än sitter. Tre firmatecknare i tre länder kan skriva under i samma möte. Notarien kontrollerar varje identitet, ser underskriften göras och bestyrker den.' },
       { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'Handlingen skrivs ut, undertecknas och stämplas av notarien, och apostillen sätts i samma möte. Inget andra besök, ingen andra notarie.' },
       { name: 'Originalet är på väg', text: 'I Stockholm levererar vi originalet personligen till ert kontor, ofta samma dag. Annars går det med expressbud till byrån eller direkt till motparten. Ingen behöver lämna sitt skrivbord.' },
@@ -203,8 +203,8 @@ export const sv: Strings = {
       {
         heading: 'Varför Apostella startades',
         paragraphs: [
-          'I en allt mer global värld har en affär firmatecknare i flera länder och tidszoner. De behöver kunna skriva under i samma möte, var de än befinner sig, och originalet behöver vara på väg inom 24 timmar. Apostella startades för att göra det till vardag.',
-          'En enda handling och en closing med fyrtio firmatecknare i fyra länder är olika arbeten. Vi byggde byrån för det andra: långa öppettider, fyra språk, två notarier som kan vara i samma möte, och ett budkonto som används varje dag.',
+          'I en allt mer global värld har en affär firmatecknare i flera länder och tidszoner. De behöver kunna skriva under i samma möte, var de än befinner sig, och originalet behöver nå mottagaren inom någon dag. Apostella startades för att göra det till vardag.',
+          'En enda handling och en closing med fyrtio firmatecknare i fyra länder är olika arbeten. Vi byggde byrån för det andra: långa öppettider, fyra språk, två notarius publicus så att bestyrkandet och apostillen utfärdas samtidigt, och ett budkonto som används varje dag.',
         ],
       },
       {
