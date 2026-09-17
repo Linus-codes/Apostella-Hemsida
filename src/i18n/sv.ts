@@ -97,7 +97,7 @@ export const sv: Strings = {
     title: 'Tjänster',
     description: 'Bestyrkande på video, apostille i samma möte, bestyrkta kopior och volym på plats hos er. För advokatbyråer och banker i Sverige och utomlands.',
     h1: 'Bestyrkande och apostille i samma möte.',
-    lede: 'Två notarius publicus i bolaget, förordnade av länsstyrelsen. Allt nedan görs på video eller på ert kontor, och originalet går i väg samma dag.',
+    lede: 'Två notarius publicus i bolaget, förordnade av länsstyrelsen. Allt nedan görs på video eller på ert kontor, och originalet är på väg inom 24 timmar.',
     sections: [
       {
         heading: 'Bestyrkande på video',

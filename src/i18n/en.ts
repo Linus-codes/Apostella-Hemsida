@@ -95,7 +95,7 @@ export const en = {
     title: 'Services',
     description: 'Notarisation on video, apostille in the same meeting, certified copies and volume work at your office. For law firms and banks in Sweden and abroad.',
     h1: 'Notarisation and apostille in the same meeting.',
-    lede: 'Two notaries public in-house, appointed by the county administrative board. Everything below is done on video or at your office, and the original leaves the same day.',
+    lede: 'Two notaries public in-house, appointed by the county administrative board. Everything below is done on video or at your office, and the original is on its way within 24 hours.',
     sections: [
       {
         heading: 'Notarisation on video',
