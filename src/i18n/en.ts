@@ -53,26 +53,26 @@ export const en = {
     ],
     global: {
       heading: 'Three signatories, three time zones, one meeting.',
-      p1: 'The signatories can be anywhere in the world and still sign in the same meeting. One in New York, one in New Mexico and one in Stockholm: each of them verifies their identity, signs in front of the notary and is done in about five minutes.',
-      p2: 'Many clients ask whether that is even possible. It is. The notary meets everyone in one video meeting, and the original goes out the same day.',
+      p1: 'The signatories can be anywhere in the world and still sign in the same meeting. One in New York, one in New Mexico and one in Stockholm: they verify their identity, sign in front of the notary and are done in about five minutes.',
+      p2: 'Many clients ask whether that is even possible. It is. The notary meets everyone in one video meeting, and the original is on its way within 24 hours.',
     },
     services: {
       heading: 'Four things we do.',
       items: [
-        { name: 'Notarisation on video', text: 'We verify identity with a passport or national ID card, watch the signature being made and certify it. Several signatories can join from different countries in the same meeting.', meta: 'Same day' },
+        { name: 'Notarisation on video', text: 'We verify identity with a passport or national ID card, watch the signature being made and certify it. Several signatories can join from different countries in the same meeting.', meta: 'Weekdays 08.00 to 22.00 CET' },
         { name: 'Apostille', text: 'Since 2005 only a notary public can issue an apostille in Sweden. We issue it in the same meeting as the notarisation, so there is no second visit.', meta: 'Same meeting' },
-        { name: 'Certified copies', text: 'Certified copies of passports, registration certificates and articles of association, ready to send with the rest of the file.', meta: 'Same day' },
+        { name: 'Certified copies', text: 'Certified copies of passports, registration certificates and articles of association, ready to send with the rest of the file.', meta: 'Same meeting' },
         { name: 'Volume on site', text: 'For KYC peaks and large transactions we come to you. One large bank had 170 powers of attorney notarised and apostilled in a single working day.', meta: 'Prepared the day before' },
       ],
-      closing: 'We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
+      closing: 'Law firms and banks in Sweden and abroad already send us their documents, from a single power of attorney to a closing with dozens of signatories. We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
       link: 'All services in detail',
     },
     how: {
       heading: 'From booking to original in the recipient’s hands.',
       steps: [
-        { name: 'You book a time and send the document', text: 'As a PDF, with the recipient country and the number of originals you need.' },
+        { name: 'You book a time and send the document', text: 'With the recipient country and the number of originals you need.' },
         { name: 'We check the document and the route', text: 'Who is authorised to sign, and whether the recipient country requires an apostille or legalisation.' },
-        { name: 'Your client signs on video', text: 'With a passport or national ID card, in front of the notary, from anywhere in the world. About five minutes per signatory.' },
+        { name: 'Your client signs on video', text: 'With a passport or national ID card, in front of the notary, from anywhere in the world.' },
         { name: 'We print, sign in wet ink and attach the apostille', text: 'In the same session. No second visit, no second notary.' },
         { name: 'The original is on its way', text: 'Delivered in person to your office in Stockholm, or by express courier to your firm or the counterparty. Nobody has to leave their desk.' },
       ],
@@ -100,7 +100,7 @@ export const en = {
       {
         heading: 'Notarisation on video',
         paragraphs: [
-          'Your client joins a video meeting with a passport or national ID card. The notary verifies the identity, watches the signature being made and certifies it with an advanced electronic signature. We then print the document, sign it in wet ink and stamp it, so the recipient gets a paper original.',
+          'Your client joins a video meeting with a passport or national ID card. The notary verifies the identity, watches the signature being made and certifies it with an advanced electronic signature. The notarial certificate is then printed, signed in wet ink and stamped, ready for the apostille and the courier.',
           'Several signatories can join the same meeting from different countries and sign one after the other. The meeting takes five to fifteen minutes. We coordinate directly with the signatories, so your firm does not have to courier originals back and forth before the notarisation.',
         ],
       },
@@ -120,7 +120,7 @@ export const en = {
       {
         heading: 'Volume at your office',
         paragraphs: [
-          'KYC deadlines and large transactions produce peaks: a hundred powers of attorney that must be ready before a market opens. We come to your office with two notaries and prepare the day before, so that the stamping takes minutes per document instead of hours. One large bank had 170 powers of attorney notarised and apostilled in a single working day.',
+          'KYC deadlines and large transactions produce peaks: a hundred powers of attorney that must be ready before a market opens. We come to your office, with two notaries when the volume calls for it, and prepare the day before, so that the stamping takes minutes per document instead of hours. One large bank had 170 powers of attorney notarised and apostilled in a single working day.',
           'Banks and large firms can keep us on a retainer, with one invoice and a fixed price per document.',
         ],
       },
@@ -144,15 +144,15 @@ export const en = {
     h1: 'From booking to original in the recipient’s hands.',
     lede: 'A notarisation with apostille takes one meeting. The preparation the day before decides whether it takes five minutes or an afternoon.',
     steps: [
-      { name: 'You book a time and send the document', text: 'Send the document as a PDF, tell us the recipient country and the number of originals you need. Book a time that suits the signatory, weekdays between 08.00 and 22.00 Swedish time.' },
+      { name: 'You book a time and send the document', text: 'Send us the document, tell us the recipient country and the number of originals you need. Book a time that suits the signatory, weekdays between 08.00 and 22.00 Swedish time.' },
       { name: 'We check the document and the route', text: 'We read the document, confirm who is authorised to sign and tell you whether the recipient country requires an apostille or legalisation. Missing details are fixed before the meeting, not after.' },
-      { name: 'Your client signs on video', text: 'The signatories join the video meeting with a passport or national ID card, from wherever in the world they are. Three signatories in three countries can sign in the same meeting. The notary verifies each identity, watches the signature being made and certifies it. About five minutes per signatory.' },
+      { name: 'Your client signs on video', text: 'The signatories join the video meeting with a passport or national ID card, from wherever in the world they are. Three signatories in three countries can sign in the same meeting. The notary verifies each identity, watches the signature being made and certifies it.' },
       { name: 'We print, sign in wet ink and attach the apostille', text: 'The document is printed, signed and stamped by the notary, and the apostille is attached in the same session. No second visit, no second notary.' },
-      { name: 'The original is on its way', text: 'In Stockholm we deliver the original in person to your office, the same day. Elsewhere it goes by express courier to your firm or directly to the counterparty. Nobody has to leave their desk.' },
+      { name: 'The original is on its way', text: 'In Stockholm we deliver the original in person to your office, often the same day. Elsewhere it goes by express courier to your firm or directly to the counterparty. Nobody has to leave their desk.' },
     ],
     ready: {
       heading: 'What to have ready',
-      text: 'The document as a PDF in its final version. The signatory’s passport or national ID card. The recipient country. The number of originals. For a company signatory, the registration certificate that shows the signing authority. With those in place the meeting takes five to fifteen minutes.',
+      text: 'The document in its final version. The signatory’s passport or national ID card. The recipient country. The number of originals. For a company signatory, the registration certificate that shows the signing authority. With those in place the meeting takes five to fifteen minutes.',
     },
     volume: {
       heading: 'Volume work is decided the day before',
@@ -176,8 +176,8 @@ export const en = {
     vat: 'Prices in euro. VAT and prices in Swedish kronor are stated on the quote.',
     includes: {
       heading: 'What the price includes',
-      p1: 'One person coordinates with the signatories, checks the document before the meeting and follows the original until it has arrived. That is the part a price per stamp never shows.',
-      p2: 'For comparison, an apostille at a Swedish notary public typically costs 300 to 500 kronor per document according to public price lists, and legalisation at the Ministry for Foreign Affairs costs 255 kronor per signature. The difference is the coordination, the languages and the hours.',
+      p1: 'One person coordinates with the signatories, checks the document before the meeting and follows the original until it has arrived. All of that is included in the price per document.',
+      p2: 'For comparison, an apostille at a Swedish notary public typically costs 300 to 500 kronor per document according to public price lists, and legalisation at the Ministry for Foreign Affairs costs 255 kronor per signature. The difference is the coordination, the languages and the time your firm saves.',
     },
   },
   about: {
@@ -195,13 +195,13 @@ export const en = {
       {
         heading: 'Who we are',
         paragraphs: [
-          'The two notaries public at Apostella are appointed by the county administrative board. Names, appointments and portraits are added once the owners have confirmed them.',
+          'The two notaries public at Apostella are appointed by the county administrative board. Law firms and banks in Sweden and abroad already work with us, from single powers of attorney to closings with dozens of signatories. Names, appointments and portraits are added once the owners have confirmed them.',
         ],
       },
       {
         heading: 'Why Apostella was started',
         paragraphs: [
-          'In an increasingly global world, a deal has signatories in several countries and time zones. They need to sign in the same meeting, wherever they are, and the original needs to reach the recipient the same day. Apostella was started to make that ordinary.',
+          'In an increasingly global world, a deal has signatories in several countries and time zones. They need to sign in the same meeting, wherever they are, and the original needs to be on its way within 24 hours. Apostella was started to make that ordinary.',
           'A single document and a closing with forty signatories in four countries are different jobs. We built the firm for the second one: long opening hours, four languages, two notaries who can be in the same meeting, and a courier account that is used every day.',
         ],
       },
@@ -218,7 +218,7 @@ export const en = {
     title: 'Contact',
     description: 'Book a video meeting, send a document or call. Weekdays 08.00 to 22.00 CET. Collection and delivery in Stockholm.',
     h1: 'Book a meeting or send the document.',
-    lede: 'Send the document as a PDF with the recipient country and the number of originals. We reply with a time and what the signatory should have ready.',
+    lede: 'Send us the document with the recipient country and the number of originals. We reply with a time and what the signatory should have ready.',
     email: 'Email',
     phone: 'Phone',
     booking: 'Video meeting',
@@ -228,7 +228,7 @@ export const en = {
     address: 'Office',
     ready: {
       heading: 'What to have ready',
-      text: 'The document as a PDF in its final version, the signatory’s passport or national ID card, the recipient country and the number of originals. For a company signatory, the registration certificate that shows the signing authority.',
+      text: 'The document in its final version, the signatory’s passport or national ID card, the recipient country and the number of originals. For a company signatory, the registration certificate that shows the signing authority.',
     },
   },
   privacy: {

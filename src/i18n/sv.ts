@@ -55,26 +55,26 @@ export const sv: Strings = {
     ],
     global: {
       heading: 'Tre firmatecknare, tre tidszoner, ett möte.',
-      p1: 'De som ska skriva under kan sitta var som helst i världen och ändå skriva under i samma möte. En i New York, en i New Mexico och en i Stockholm: var och en verifierar sin identitet, skriver under inför notarien och är klar på ungefär fem minuter.',
-      p2: 'Många klienter frågar om det ens är möjligt. Det är det. Notarien möter alla i ett videomöte, och originalet går i väg samma dag.',
+      p1: 'De som ska skriva under kan sitta var som helst i världen och ändå skriva under i samma möte. En i New York, en i New Mexico och en i Stockholm: de verifierar sin identitet, skriver under inför notarien och är klara på ungefär fem minuter.',
+      p2: 'Många klienter frågar om det ens är möjligt. Det är det. Notarien möter alla i ett videomöte, och originalet är på väg inom 24 timmar.',
     },
     services: {
       heading: 'Fyra saker vi gör.',
       items: [
-        { name: 'Bestyrkande på video', text: 'Vi kontrollerar identiteten med pass eller nationellt id-kort, ser underskriften göras och bestyrker den. Flera firmatecknare kan delta från olika länder i samma möte.', meta: 'Samma dag' },
+        { name: 'Bestyrkande på video', text: 'Vi kontrollerar identiteten med pass eller nationellt id-kort, ser underskriften göras och bestyrker den. Flera firmatecknare kan delta från olika länder i samma möte.', meta: 'Vardagar 08.00 till 22.00 CET' },
         { name: 'Apostille', text: 'Sedan 2005 får bara notarius publicus utfärda apostille i Sverige. Vi sätter den i samma möte som bestyrkandet, så det blir inget andra besök.', meta: 'Samma möte' },
-        { name: 'Bestyrkta kopior', text: 'Bestyrkta kopior av pass, registreringsbevis och bolagsordning, klara att skicka med resten av akten.', meta: 'Samma dag' },
+        { name: 'Bestyrkta kopior', text: 'Bestyrkta kopior av pass, registreringsbevis och bolagsordning, klara att skicka med resten av akten.', meta: 'Samma möte' },
         { name: 'Volym på plats', text: 'Vid KYC-toppar och stora affärer kommer vi till er. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.', meta: 'Förbereds dagen innan' },
       ],
-      closing: 'Vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
+      closing: 'Advokatbyråer och banker i Sverige och utomlands skickar redan sina handlingar till oss, från en enda fullmakt till en closing med dussintals firmatecknare. Vi ger inga juridiska råd. Byrån äger akten. Vi sätter stämplarna.',
       link: 'Alla tjänster i detalj',
     },
     how: {
       heading: 'Från bokning till original hos mottagaren.',
       steps: [
-        { name: 'Du bokar en tid och skickar handlingen', text: 'Som pdf, med mottagarland och antal original.' },
+        { name: 'Du bokar en tid och skickar handlingen', text: 'Med mottagarland och antal original.' },
         { name: 'Vi kontrollerar handlingen och vägen', text: 'Vem som får skriva under, och om mottagarlandet kräver apostille eller legalisering.' },
-        { name: 'Klienten skriver under på video', text: 'Med pass eller nationellt id-kort, inför notarien, var som helst i världen. Ungefär fem minuter per person.' },
+        { name: 'Klienten skriver under på video', text: 'Med pass eller nationellt id-kort, inför notarien, var som helst i världen.' },
         { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'I samma möte. Inget andra besök, ingen andra notarie.' },
         { name: 'Originalet är på väg', text: 'Levereras personligen till ert kontor i Stockholm, eller med expressbud till byrån eller motparten. Ingen behöver lämna sitt skrivbord.' },
       ],
@@ -102,7 +102,7 @@ export const sv: Strings = {
       {
         heading: 'Bestyrkande på video',
         paragraphs: [
-          'Klienten kopplar upp sig till ett videomöte med pass eller nationellt id-kort. Notarien kontrollerar identiteten, ser underskriften göras och bestyrker den med en avancerad elektronisk underskrift. Sedan skriver vi ut handlingen, undertecknar i wet ink och stämplar, så att mottagaren får ett original på papper.',
+          'Klienten kopplar upp sig till ett videomöte med pass eller nationellt id-kort. Notarien kontrollerar identiteten, ser underskriften göras och bestyrker den med en avancerad elektronisk underskrift. Bestyrkandet skrivs sedan ut, undertecknas i wet ink och stämplas, klart för apostillen och budet.',
           'Flera firmatecknare kan delta i samma möte från olika länder och skriva under en efter en. Mötet tar fem till femton minuter. Vi samordnar direkt med firmatecknarna, så byrån slipper buda original fram och tillbaka inför bestyrkandet.',
         ],
       },
@@ -122,7 +122,7 @@ export const sv: Strings = {
       {
         heading: 'Volym på ert kontor',
         paragraphs: [
-          'KYC-deadlines och stora affärer ger toppar: hundra fullmakter som ska vara klara innan en marknad öppnar. Vi kommer till ert kontor med två notarier och förbereder dagen innan, så att stämplingen tar minuter per handling i stället för timmar. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.',
+          'KYC-deadlines och stora affärer ger toppar: hundra fullmakter som ska vara klara innan en marknad öppnar. Vi kommer till ert kontor, med två notarier när volymen kräver det, och förbereder dagen innan, så att stämplingen tar minuter per handling i stället för timmar. En storbank fick 170 fullmakter bestyrkta och apostillerade på en arbetsdag.',
           'Banker och storbyråer kan ha oss på retainer, med en faktura och fast pris per handling.',
         ],
       },
@@ -146,15 +146,15 @@ export const sv: Strings = {
     h1: 'Från bokning till original hos mottagaren.',
     lede: 'Ett bestyrkande med apostille tar ett möte. Förberedelsen dagen innan avgör om det tar fem minuter eller en eftermiddag.',
     steps: [
-      { name: 'Du bokar en tid och skickar handlingen', text: 'Skicka handlingen som pdf, ange mottagarland och hur många original du behöver. Boka en tid som passar den som ska skriva under, vardagar mellan 08.00 och 22.00 svensk tid.' },
+      { name: 'Du bokar en tid och skickar handlingen', text: 'Skicka handlingen till oss, ange mottagarland och hur många original du behöver. Boka en tid som passar den som ska skriva under, vardagar mellan 08.00 och 22.00 svensk tid.' },
       { name: 'Vi kontrollerar handlingen och vägen', text: 'Vi läser handlingen, bekräftar vem som får skriva under och säger om mottagarlandet kräver apostille eller legalisering. Det som saknas rättas före mötet, inte efter.' },
-      { name: 'Klienten skriver under på video', text: 'De som ska skriva under kopplar upp sig med pass eller nationellt id-kort, var i världen de än sitter. Tre firmatecknare i tre länder kan skriva under i samma möte. Notarien kontrollerar varje identitet, ser underskriften göras och bestyrker den. Ungefär fem minuter per person.' },
+      { name: 'Klienten skriver under på video', text: 'De som ska skriva under kopplar upp sig med pass eller nationellt id-kort, var i världen de än sitter. Tre firmatecknare i tre länder kan skriva under i samma möte. Notarien kontrollerar varje identitet, ser underskriften göras och bestyrker den.' },
       { name: 'Vi skriver ut, undertecknar i wet ink och sätter apostillen', text: 'Handlingen skrivs ut, undertecknas och stämplas av notarien, och apostillen sätts i samma möte. Inget andra besök, ingen andra notarie.' },
-      { name: 'Originalet är på väg', text: 'I Stockholm levererar vi originalet personligen till ert kontor, samma dag. Annars går det med expressbud till byrån eller direkt till motparten. Ingen behöver lämna sitt skrivbord.' },
+      { name: 'Originalet är på väg', text: 'I Stockholm levererar vi originalet personligen till ert kontor, ofta samma dag. Annars går det med expressbud till byrån eller direkt till motparten. Ingen behöver lämna sitt skrivbord.' },
     ],
     ready: {
       heading: 'Det här ska du ha framme',
-      text: 'Handlingen som pdf i slutlig version. Pass eller nationellt id-kort för den som skriver under. Mottagarlandet. Antal original. För ett bolag även registreringsbeviset som visar vem som får teckna firman. Med det på plats tar mötet fem till femton minuter.',
+      text: 'Handlingen i slutlig version. Pass eller nationellt id-kort för den som skriver under. Mottagarlandet. Antal original. För ett bolag även registreringsbeviset som visar vem som får teckna firman. Med det på plats tar mötet fem till femton minuter.',
     },
     volume: {
       heading: 'Volymärendet avgörs dagen innan',
@@ -178,8 +178,8 @@ export const sv: Strings = {
     vat: 'Priser i euro. Moms och priser i kronor anges i offerten.',
     includes: {
       heading: 'Det här ingår i priset',
-      p1: 'En person samordnar med firmatecknarna, kontrollerar handlingen före mötet och följer originalet tills det har kommit fram. Det är den delen ett pris per stämpel aldrig visar.',
-      p2: 'Som jämförelse kostar en apostille hos notarius publicus i Sverige typiskt 300 till 500 kronor per handling enligt öppna prislistor, och en legalisering hos Utrikesdepartementet kostar 255 kronor per underskrift. Skillnaden är samordningen, språken och tiderna.',
+      p1: 'En person samordnar med firmatecknarna, kontrollerar handlingen före mötet och följer originalet tills det har kommit fram. Allt det ingår i priset per handling.',
+      p2: 'Som jämförelse kostar en apostille hos notarius publicus i Sverige typiskt 300 till 500 kronor per handling enligt öppna prislistor, och en legalisering hos Utrikesdepartementet kostar 255 kronor per underskrift. Skillnaden är samordningen, språken och tiden byrån sparar.',
     },
   },
   about: {
@@ -197,13 +197,13 @@ export const sv: Strings = {
       {
         heading: 'Vilka vi är',
         paragraphs: [
-          'De två notarius publicus på Apostella är förordnade av länsstyrelsen. Namn, förordnanden och porträtt läggs till när ägarna har bekräftat dem.',
+          'De två notarius publicus på Apostella är förordnade av länsstyrelsen. Advokatbyråer och banker i Sverige och utomlands arbetar redan med oss, från enstaka fullmakter till closings med dussintals firmatecknare. Namn, förordnanden och porträtt läggs till när ägarna har bekräftat dem.',
         ],
       },
       {
         heading: 'Varför Apostella startades',
         paragraphs: [
-          'I en allt mer global värld har en affär firmatecknare i flera länder och tidszoner. De behöver kunna skriva under i samma möte, var de än befinner sig, och originalet behöver nå mottagaren samma dag. Apostella startades för att göra det till vardag.',
+          'I en allt mer global värld har en affär firmatecknare i flera länder och tidszoner. De behöver kunna skriva under i samma möte, var de än befinner sig, och originalet behöver vara på väg inom 24 timmar. Apostella startades för att göra det till vardag.',
           'En enda handling och en closing med fyrtio firmatecknare i fyra länder är olika arbeten. Vi byggde byrån för det andra: långa öppettider, fyra språk, två notarier som kan vara i samma möte, och ett budkonto som används varje dag.',
         ],
       },
@@ -220,7 +220,7 @@ export const sv: Strings = {
     title: 'Kontakt',
     description: 'Boka ett videomöte, skicka en handling eller ring. Vardagar 08.00 till 22.00. Hämtning och leverans i Stockholm.',
     h1: 'Boka ett möte eller skicka handlingen.',
-    lede: 'Skicka handlingen som pdf med mottagarland och antal original. Vi svarar med en tid och vad den som skriver under ska ha framme.',
+    lede: 'Skicka handlingen till oss med mottagarland och antal original. Vi svarar med en tid och vad den som skriver under ska ha framme.',
     email: 'Mejl',
     phone: 'Telefon',
     booking: 'Videomöte',
@@ -230,7 +230,7 @@ export const sv: Strings = {
     address: 'Kontor',
     ready: {
       heading: 'Det här ska du ha framme',
-      text: 'Handlingen som pdf i slutlig version, pass eller nationellt id-kort för den som skriver under, mottagarlandet och antal original. För ett bolag även registreringsbeviset som visar vem som får teckna firman.',
+      text: 'Handlingen i slutlig version, pass eller nationellt id-kort för den som skriver under, mottagarlandet och antal original. För ett bolag även registreringsbeviset som visar vem som får teckna firman.',
     },
   },
   privacy: {
