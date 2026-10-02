@@ -43,7 +43,7 @@ export const en = {
   home: {
     title: 'Apostella. Notary public for law firms and banks',
     h1: 'Notarised and apostilled in one meeting, wherever your client is.',
-    lede: 'Apostella is a notary public firm based in Sweden that works with law firms and banks. We witness the signing in a digital meeting where your client has verified their identity, issue both the notarisation and the apostille in the same session, and send the original by express courier.',
+    lede: 'Apostella is a notary public firm based in Sweden that works with law firms and banks. Your client signs in a digital meeting, we issue both the notarisation and the apostille in the same session, and the original goes out by express courier.',
     primary: 'Book a meeting',
     secondary: 'How it works',
     facts: [
@@ -61,10 +61,10 @@ export const en = {
       items: [
         { name: 'Notarisation on video', text: 'We verify identity with a passport or national ID card, watch the signature being made and certify it. Several signatories can join from different countries in the same meeting.', meta: 'Weekdays 08.00 to 22.00 CET' },
         { name: 'Apostille', text: 'Since 2005 only a notary public can issue an apostille in Sweden. We issue it in the same meeting as the notarisation, so there is no second visit.', meta: 'Same meeting' },
-        { name: 'Certified copies', text: 'Certified copies of passports, registration certificates and articles of association, ready to send with the rest of the file.', meta: 'Same meeting' },
+        { name: 'Certified copies', text: 'Certified copies of passports, registration certificates and articles of association, notarised and apostilled in the same meeting.', meta: 'Same meeting' },
         { name: 'Volume on site', text: 'For KYC peaks and large transactions we come to you. One large bank had 170 powers of attorney notarised and apostilled in a single working day.', meta: 'Prepared the day before' },
       ],
-      closing: 'Law firms and banks in Sweden and abroad already send us their documents, from a single power of attorney to a closing with dozens of signatories. We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
+      closing: 'Law firms and banks in Sweden and abroad already send us their documents, from a single power of attorney to a closing with dozens of signatories.',
       link: 'All services in detail',
     },
     how: {
@@ -72,7 +72,7 @@ export const en = {
       steps: [
         { name: 'You book a time and send the document', text: 'With the recipient country and the number of originals you need.' },
         { name: 'We check the document', text: 'Who is authorised to sign, and that the document is ready to be notarised and apostilled. Your firm decides what the recipient country requires, and we answer any questions along the way.' },
-        { name: 'Your client signs on video', text: 'With a passport or national ID card, in front of the notary, from anywhere in the world.' },
+        { name: 'Your client signs on video', text: 'Your client signs on video in front of the notary, anywhere in the world.' },
         { name: 'We print, sign in wet ink and attach the apostille', text: 'In the same session. No second visit, no second notary.' },
         { name: 'The original is on its way', text: 'Delivered in person to your office in Stockholm, or by express courier to your firm or the counterparty. Nobody has to leave their desk.' },
       ],
@@ -87,7 +87,7 @@ export const en = {
     },
     knowledge: {
       heading: 'The stamp is the last step in the deal. It is also the one that delays it.',
-      text: 'Notarieguiden is our knowledge site for paralegals and lawyers, written in Swedish. The articles sell nothing. They explain the rules, the deadlines and the arithmetic behind a moved closing.',
+      text: 'Notarieguiden is our knowledge site for paralegals and lawyers, written in Swedish. The articles sell nothing. They explain the rules, the deadlines and what a delayed closing costs.',
       link: 'Read Notarieguiden',
     },
   },
@@ -101,7 +101,7 @@ export const en = {
         heading: 'Notarisation on video',
         paragraphs: [
           'Your client joins a video meeting with a passport or national ID card. The notary verifies the identity, watches the signature being made and certifies it with an advanced electronic signature. The notarial certificate is then printed, signed in wet ink and stamped, ready for the apostille and the courier.',
-          'Several signatories can join the same meeting from different countries and sign one after the other. The meeting takes five to fifteen minutes. We coordinate directly with the signatories, so your firm does not have to courier originals back and forth before the notarisation.',
+          'Several signatories can join the same meeting from different countries and sign one after the other. The meeting takes five to fifteen minutes. We book the meeting directly with the signatories and handle the originals ourselves, so nothing has to be couriered back and forth before the notarisation.',
         ],
       },
       {
@@ -127,13 +127,13 @@ export const en = {
       {
         heading: 'Powers of attorney for Spain',
         paragraphs: [
-          'A Swedish power of attorney is accepted by a Spanish notary when three things are in place: the apostille, a sworn translation if the document is not in Spanish, and a statement that the Swedish notary performs functions equivalent to those of a Spanish notary. We write that statement into the document and notarise it in Spanish, so the client does not have to start over.',
+          'A Swedish power of attorney is accepted by a Spanish notary when three things are in place: the apostille, a sworn translation if the document is not in Spanish, and a statement that the Swedish notary performs functions equivalent to those of a Spanish notary. We write that statement into the document and notarise it in Spanish, so the client does not have to translate it and apostille it again.',
         ],
       },
       {
-        heading: 'What we do not do',
+        heading: 'What we will never say',
         paragraphs: [
-          'We do not give legal advice. Your firm keeps the file. We put the stamps on it.',
+          'It will be done in two weeks. You will need two appointments. The notary cannot issue the apostille. None of that is said here. Both stamps are issued in one meeting, and the original is usually with your client within one to two working days.',
         ],
       },
     ],
@@ -142,11 +142,11 @@ export const en = {
     title: 'How it works',
     description: 'Five steps from booking to a wet-ink original with the recipient. What to have ready, how the video meeting runs and how delivery works.',
     h1: 'From booking to original in the recipient’s hands.',
-    lede: 'A notarisation with apostille takes one meeting. The preparation the day before decides whether it takes five minutes or an afternoon.',
+    lede: 'A notarisation with apostille takes one meeting. Tell us what you need and when, and we arrange the rest.',
     steps: [
       { name: 'You book a time and send the document', text: 'Send us the document, tell us the recipient country and the number of originals you need. Book a time that suits the signatory, weekdays between 08.00 and 22.00 Swedish time.' },
-      { name: 'We check the document', text: 'We read the document and confirm who is authorised to sign. What the recipient country requires is your firm’s call, and we answer any questions along the way. Missing details are fixed before the meeting, not after.' },
-      { name: 'Your client signs on video', text: 'The signatories join the video meeting with a passport or national ID card, from wherever in the world they are. Three signatories in three countries can sign in the same meeting. The notary verifies each identity, watches the signature being made and certifies it.' },
+      { name: 'We check the document', text: 'We read the document and confirm who is authorised to sign. What the recipient country requires is your firm’s call, and we answer any questions along the way. If something is missing, we sort it out together.' },
+      { name: 'Your client signs on video', text: 'The signatories join the video meeting with a passport or national ID card, from wherever in the world they are. A board member in Singapore and a managing director in Stockholm can sign in the same meeting. The notary verifies each identity, watches the signature being made and certifies it.' },
       { name: 'We print, sign in wet ink and attach the apostille', text: 'The document is printed, signed and stamped by the notary, and the apostille is attached in the same session. No second visit, no second notary.' },
       { name: 'The original is on its way', text: 'In Stockholm we deliver the original in person to your office, often the same day. Elsewhere it goes by express courier to your firm or directly to the counterparty. Nobody has to leave their desk.' },
     ],
@@ -163,11 +163,11 @@ export const en = {
     title: 'Pricing',
     description: 'A fixed price per document and one invoice. Price list for notarisation, apostille, printed originals and express handling. Retainers for banks and large firms.',
     h1: 'A fixed price per document. One invoice.',
-    lede: 'You pay per document, not per hour. The price is the same whether the meeting is on video or at your office.',
+    lede: 'You pay per document, not per hour.',
     items: {
       notarisation: { name: 'Notarisation', desc: 'Identity check, witnessed signature and certification, on video or at your office.' },
       apostille: { name: 'Apostille', desc: 'Issued in the same meeting.' },
-      original: { name: 'Printed original', desc: 'Printing, wet-ink signature and stamp, prepared for the courier. Courier at cost.' },
+      original: { name: 'Hard copy', desc: 'Printing, wet-ink signature and stamp, prepared for the courier. Courier at cost.' },
       express: { name: 'Express handling', desc: 'Same-day handling when the deadline is today.' },
       retainer: { name: 'Retainer for banks and large firms', desc: 'A fixed monthly price for volume, with one invoice.' },
     },
@@ -176,7 +176,7 @@ export const en = {
     vat: 'Prices in euro. VAT and prices in Swedish kronor are stated on the quote.',
     includes: {
       heading: 'What the price includes',
-      p1: 'One person coordinates with the signatories, checks the document before the meeting and follows the original until it has arrived. All of that is included in the price per document.',
+      p1: 'We coordinate with the signatories, check the document before the meeting and track the original until it arrives. All of that is included in the price per document.',
       p2: 'For comparison, an apostille at a Swedish notary public typically costs 300 to 500 kronor per document according to public price lists, and legalisation at the Ministry for Foreign Affairs costs 255 kronor per signature. The difference is the coordination, the languages and the time your firm saves.',
     },
   },
@@ -195,14 +195,14 @@ export const en = {
       {
         heading: 'Who we are',
         paragraphs: [
-          'The two notaries public at Apostella are appointed by the county administrative board. Law firms and banks in Sweden and abroad already work with us, from single powers of attorney to closings with dozens of signatories. Names, appointments and portraits are added once the owners have confirmed them.',
+          'The two notaries public at Apostella are appointed by the county administrative board. Law firms and banks in Sweden and abroad already work with us, from single powers of attorney to closings with dozens of signatories.',
         ],
       },
       {
         heading: 'Why Apostella was started',
         paragraphs: [
           'In an increasingly global world, a deal has signatories in several countries and time zones. They need to sign in the same meeting, wherever they are, and the original needs to reach the recipient within a day or two. Apostella was started to make that ordinary.',
-          'A single document and a closing with forty signatories in four countries are different jobs. We built the firm for the second one: long opening hours, four languages, two notaries public so that the notarisation and the apostille are issued at the same time, and a courier account that is used every day.',
+          'Apostella is built for complex transactions with many parties: long opening hours, four languages, two notaries public so that the notarisation and the apostille are issued at the same time, and a courier account that is used every day.',
         ],
       },
       {
