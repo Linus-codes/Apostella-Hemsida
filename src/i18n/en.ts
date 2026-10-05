@@ -127,13 +127,16 @@ export const en = {
       {
         heading: 'Powers of attorney for Spain',
         paragraphs: [
-          'A Swedish power of attorney is accepted by a Spanish notary when three things are in place: the apostille, a sworn translation if the document is not in Spanish, and a statement that the Swedish notary performs functions equivalent to those of a Spanish notary. We write that statement into the document and notarise it in Spanish, so the client does not have to translate it and apostille it again.',
+          'A Swedish power of attorney is accepted by a Spanish notary when three things are in place: the apostille, a sworn translation if the document is not in Spanish, and a statement that the Swedish notary performs functions equivalent to those of a Spanish notary. We write that statement into the document and notarise it in Spanish, so it is ready to use in Spain without any further steps.',
         ],
       },
       {
-        heading: 'What we will never say',
+        heading: 'Things you will not hear from us:',
         paragraphs: [
-          'It will be done in two weeks. You will need two appointments. The notary cannot issue the apostille. None of that is said here. Both stamps are issued in one meeting, and the original is usually with your client within one to two working days.',
+          '“That will take two weeks.”',
+          '“You’ll need three appointments for that.”',
+          '“Our next available slot is in March.”',
+          'We’d rather just get it done.',
         ],
       },
     ],
@@ -177,7 +180,7 @@ export const en = {
     includes: {
       heading: 'What the price includes',
       p1: 'We coordinate with the signatories, check the document before the meeting and track the original until it arrives. All of that is included in the price per document.',
-      p2: 'For comparison, an apostille at a Swedish notary public typically costs 300 to 500 kronor per document according to public price lists, and legalisation at the Ministry for Foreign Affairs costs 255 kronor per signature. The difference is the coordination, the languages and the time your firm saves.',
+      p2: 'For comparison, an apostille at a Swedish notary public typically costs around 500 kronor per document according to public price lists, and legalisation at the Ministry for Foreign Affairs costs 255 kronor per signature. The difference is the coordination, the languages and the time your firm saves.',
     },
   },
   about: {

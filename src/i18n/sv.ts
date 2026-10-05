@@ -129,13 +129,16 @@ export const sv: Strings = {
       {
         heading: 'Fullmakter för Spanien',
         paragraphs: [
-          'En svensk fullmakt godtas av en spansk notarie när tre saker finns på plats: apostillen, en auktoriserad översättning om handlingen inte är på spanska, och ett intyg om att den svenska notarien utför funktioner som motsvarar en spansk notaries. Vi skriver in det intyget i handlingen och notariserar på spanska, så att klienten slipper översätta och apostillera den igen.',
+          'En svensk fullmakt godtas av en spansk notarie när tre saker finns på plats: apostillen, en auktoriserad översättning om handlingen inte är på spanska, och ett intyg om att den svenska notarien utför funktioner som motsvarar en spansk notaries. Vi skriver in det intyget i handlingen och notariserar på spanska, så att den är klar att användas i Spanien utan ytterligare steg.',
         ],
       },
       {
-        heading: 'Det vi aldrig kommer att säga',
+        heading: 'Det du inte kommer att höra från oss:',
         paragraphs: [
-          'Det blir klart om två veckor. Du behöver två besök. Notarien kan inte utfärda apostillen. Inget av det sägs här. Båda stämplarna utfärdas i ett möte, och originalet når i regel klienten inom en till två arbetsdagar.',
+          '”Det tar två veckor.”',
+          '”Du behöver tre besök för det.”',
+          '”Nästa lediga tid är i mars.”',
+          'Vi gör hellre klart det.',
         ],
       },
     ],
@@ -163,13 +166,13 @@ export const sv: Strings = {
   },
   pricing: {
     title: 'Priser',
-    description: 'Fast pris per handling och en faktura. Prislista för notarisering, apostille, hard copy och expresshantering. Retainer för banker och storbyråer.',
+    description: 'Fast pris per handling och en faktura. Prislista för notarisering, apostille, originalhantering och expresshantering. Retainer för banker och storbyråer.',
     h1: 'Fast pris per handling. En faktura.',
     lede: 'Du betalar per handling, inte per timme.',
     items: {
       notarisation: { name: 'Notarisering', desc: 'Identitetskontroll, bevittnad underskrift och notarisering, på video eller på ert kontor.' },
       apostille: { name: 'Apostille', desc: 'Sätts i samma möte.' },
-      original: { name: 'Hard copy', desc: 'Utskrift, underskrift i wet ink och stämpel, klart för bud. Bud debiteras till självkostnad.' },
+      original: { name: 'Originalhantering', desc: 'Utskrift, underskrift i wet ink och stämpel, klart för bud. Bud debiteras till självkostnad.' },
       express: { name: 'Expresshantering', desc: 'Hantering samma dag när deadline är i dag.' },
       retainer: { name: 'Retainer för banker och storbyråer', desc: 'Fast månadspris för volym, med en faktura.' },
     },
@@ -179,7 +182,7 @@ export const sv: Strings = {
     includes: {
       heading: 'Det här ingår i priset',
       p1: 'Vi samordnar med undertecknarna, kontrollerar handlingen före mötet och följer originalet tills det har kommit fram. Allt det ingår i priset per handling.',
-      p2: 'Som jämförelse kostar en apostille hos notarius publicus i Sverige typiskt 300 till 500 kronor per handling enligt öppna prislistor, och en legalisering hos Utrikesdepartementet kostar 255 kronor per underskrift. Skillnaden är samordningen, språken och tiden byrån sparar.',
+      p2: 'Som jämförelse kostar en apostille hos notarius publicus i Sverige typiskt omkring 500 kronor per handling enligt öppna prislistor, och en legalisering hos Utrikesdepartementet kostar 255 kronor per underskrift. Skillnaden är samordningen, språken och tiden byrån sparar.',
     },
   },
   about: {
